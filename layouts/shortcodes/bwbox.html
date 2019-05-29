@@ -1,0 +1,11 @@
+<!--
+    Usage:
+    {{<bwbox [info|download|alert|tip]>}}
+    Content in bwbox (use markdown)
+    {{<endbwbox>}}
+-->
+
+<div class="bwbox bwbox-{{ .Get 0 }}">
+    <i class="bwicon-{{ .Get 0 }}"></i>
+        {{ .Inner | markdownify }}
+</div>
