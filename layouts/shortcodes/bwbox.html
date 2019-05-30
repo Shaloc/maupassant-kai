@@ -5,7 +5,7 @@
     {% /bwbox %}
 -->
 
-<div class="bwbox bwbox-{{ .Get 0 }}">
-    <i class="bwicon-{{ .Get 0 }}"></i>
-        {{ .Inner | markdownify }}
+<div class="bwbox bwbox-{{.Get 0}}">
+    <i class="bwicon-{{.Get 0}}"></i>
+    {{.Inner | markdownify }}
 </div>
